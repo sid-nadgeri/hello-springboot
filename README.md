@@ -25,17 +25,17 @@ git clone https://github.com/sid-nadgeri/hello-springboot
 ```
 cd hello-springboot
 docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
-docker build -f Dockerfile .
 ```
     5. Build and check docker image
 ```
-docker build -f Dockerfile .
+docker build -f Dockerfile -t hello-springboot:1.0-SNAPSHOT .
 docker images
 ```
     6. Run docker image i.e. application
 ```
-docker run -p 8080:8080 hello-springboot:latest
+docker run -p 8080:8080 hello-springboot:1.0-SNAPSHOT
 ```
+    7. Check application by clicking port 8080 on docker site.
     
 
 
