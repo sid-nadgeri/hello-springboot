@@ -1,4 +1,4 @@
-# Hello Springboot
+# Springboot with Dockerfile sample
 Starter project to build and run image in Docker Container with https://labs.play-with-docker.com/
 
 ## Getting started
@@ -19,11 +19,11 @@ Follow below instruction to ready the project
     3. On terminal get the code from github 
     
 ```
-git clone https://github.com/sid-nadgeri/hello-springboot
+git clone https://github.com/sid-nadgeri/springboot-with-dockerfile
 ```
     4. Go to directory and install application using maven
 ```
-cd hello-springboot
+cd springboot-with-dockerfile
 docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
 ```
     5. Build and check docker image
