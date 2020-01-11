@@ -28,12 +28,12 @@ docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr
 ```
     5. Build and check docker image
 ```
-docker build -f Dockerfile -t hello-springboot:1.0-SNAPSHOT .
+docker build -f Dockerfile -t springboot-with-dockerfile:1.0-SNAPSHOT .
 docker images
 ```
     6. Run docker image i.e. application
 ```
-docker run -p 8080:8080 hello-springboot:1.0-SNAPSHOT
+docker run -p 8080:8080 springboot-with-dockerfile:1.0-SNAPSHOT
 ```
     7. Check application by clicking port 8080 on docker site.
     
