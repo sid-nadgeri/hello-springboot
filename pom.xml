@@ -34,7 +34,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>hello-springboot</finalName>
+        <finalName>springboot-with-dockerfile</finalName>
     </build>
 
 </project>
